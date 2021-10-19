@@ -9,9 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass-loader": "^12.2.0"
-  },
   "dependencies": {
     "node-sass": "^6.0.1"
   }
