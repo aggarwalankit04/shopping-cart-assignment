@@ -4,9 +4,10 @@
   
   function getData(arrOfObjs, filterCat = false) {
     document.getElementById("prod").innerHTML = "";
+    filterCat = (window.location.hash != "" && filterCat == false) ? window.location.hash.replace("#","") : filterCat;
+    console.log(filterCat);
     arrOfObjs.forEach((x, ind) => {
       let str;
-  
       if (filterCat) {
         if (x.category === filterCat) {
           str = ` <div class="product-card">

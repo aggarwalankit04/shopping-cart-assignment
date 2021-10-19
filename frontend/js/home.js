@@ -10,7 +10,7 @@ function getData(objs) {
         <div class="product-info">
           <h5>${x.name}</h5>         
           <p>${x.description}</p>       
-          <a href="product.html"> <button id="cart-button" >Explore ${x.name}</button></a>
+          <a href="product.html#${x.id}"> <button id="cart-button" >Explore ${x.name}</button></a>
         </div>
         <div class="product-image">
         <img src=../${x.imageUrl} alt=${x.name}>
